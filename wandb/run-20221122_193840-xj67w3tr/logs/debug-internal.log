@@ -1,0 +1,322 @@
+2022-11-22 19:38:40,869 INFO    StreamThr :45772 [internal.py:wandb_internal():88] W&B internal server running at pid: 45772, started at: 2022-11-22 19:38:40.867770
+2022-11-22 19:38:40,872 DEBUG   HandlerThread:45772 [handler.py:handle_request():139] handle_request: status
+2022-11-22 19:38:40,876 DEBUG   SenderThread:45772 [sender.py:send_request():317] send_request: status
+2022-11-22 19:38:40,877 INFO    WriterThread:45772 [datastore.py:open_for_write():75] open: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/run-xj67w3tr.wandb
+2022-11-22 19:38:40,878 DEBUG   SenderThread:45772 [sender.py:send():303] send: header
+2022-11-22 19:38:40,878 DEBUG   SenderThread:45772 [sender.py:send():303] send: run
+2022-11-22 19:38:40,898 INFO    SenderThread:45772 [sender.py:_maybe_setup_resume():593] checking resume status for None/YOLOR/xj67w3tr
+2022-11-22 19:38:43,333 DEBUG   HandlerThread:45772 [handler.py:handle_request():139] handle_request: check_version
+2022-11-22 19:38:43,336 INFO    SenderThread:45772 [dir_watcher.py:__init__():216] watching files in: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/files
+2022-11-22 19:38:43,337 INFO    SenderThread:45772 [sender.py:_start_run_threads():928] run started: xj67w3tr with start time 1669117120.860149
+2022-11-22 19:38:43,337 DEBUG   SenderThread:45772 [sender.py:send():303] send: summary
+2022-11-22 19:38:43,337 INFO    SenderThread:45772 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 19:38:43,338 DEBUG   SenderThread:45772 [sender.py:send_request():317] send_request: check_version
+2022-11-22 19:38:44,350 INFO    Thread-17 :45772 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/files/wandb-summary.json
+2022-11-22 19:38:48,362 DEBUG   HandlerThread:45772 [handler.py:handle_request():139] handle_request: run_start
+2022-11-22 19:38:48,367 DEBUG   HandlerThread:45772 [system_info.py:__init__():31] System info init
+2022-11-22 19:38:48,367 DEBUG   HandlerThread:45772 [system_info.py:__init__():46] System info init done
+2022-11-22 19:38:48,367 INFO    HandlerThread:45772 [system_monitor.py:start():150] Starting system monitor
+2022-11-22 19:38:48,367 INFO    SystemMonitor:45772 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-22 19:38:48,368 INFO    HandlerThread:45772 [system_monitor.py:probe():168] Collecting system info
+2022-11-22 19:38:48,369 INFO    SystemMonitor:45772 [interfaces.py:start():168] Started cpu
+2022-11-22 19:38:48,369 INFO    SystemMonitor:45772 [interfaces.py:start():168] Started disk
+2022-11-22 19:38:48,370 INFO    SystemMonitor:45772 [interfaces.py:start():168] Started gpu
+2022-11-22 19:38:48,371 INFO    SystemMonitor:45772 [interfaces.py:start():168] Started memory
+2022-11-22 19:38:48,372 INFO    SystemMonitor:45772 [interfaces.py:start():168] Started network
+2022-11-22 19:38:48,396 DEBUG   HandlerThread:45772 [system_info.py:probe():195] Probing system
+2022-11-22 19:38:48,399 DEBUG   HandlerThread:45772 [git.py:repo():40] git repository is invalid
+2022-11-22 19:38:48,399 DEBUG   HandlerThread:45772 [system_info.py:probe():241] Probing system done
+2022-11-22 19:38:48,400 DEBUG   HandlerThread:45772 [system_monitor.py:probe():177] {'os': 'Linux-5.15.0-53-generic-x86_64-with-glibc2.17', 'python': '3.8.13', 'heartbeatAt': '2022-11-22T11:38:48.396250', 'startedAt': '2022-11-22T11:38:40.839163', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/rp/DeepLearning/yolov7-main/train.py', 'codePath': 'train.py', 'host': 'rp', 'username': 'rp', 'executable': '/home/rp/Softwares/anaconda3/envs/dyh/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2934.4449375, 'min': 800.0, 'max': 4800.0}, 'cpu_freq_per_core': [{'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 3451.119, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}], 'disk': {'total': 937.3305015563965, 'used': 300.86689376831055}, 'gpu': 'NVIDIA GeForce RTX 3080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3080', 'memory_total': 10497294336}], 'memory': {'total': 31.272598266601562}}
+2022-11-22 19:38:48,400 INFO    HandlerThread:45772 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-22 19:38:48,400 INFO    HandlerThread:45772 [system_monitor.py:probe():181] Publishing system info
+2022-11-22 19:38:48,400 DEBUG   HandlerThread:45772 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-11-22 19:38:48,401 DEBUG   HandlerThread:45772 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-22 19:38:48,401 DEBUG   HandlerThread:45772 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2022-11-22 19:38:49,351 INFO    Thread-17 :45772 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/files/requirements.txt
+2022-11-22 19:38:49,351 INFO    Thread-17 :45772 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/files/conda-environment.yaml
+2022-11-22 19:38:50,864 DEBUG   HandlerThread:45772 [system_info.py:_save_conda():86] Saving conda packages done
+2022-11-22 19:38:50,871 INFO    HandlerThread:45772 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-22 19:38:50,910 DEBUG   SenderThread:45772 [sender.py:send():303] send: files
+2022-11-22 19:38:50,911 INFO    SenderThread:45772 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-22 19:38:50,921 DEBUG   HandlerThread:45772 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-22 19:38:50,922 DEBUG   SenderThread:45772 [sender.py:send_request():317] send_request: stop_status
+2022-11-22 19:38:51,267 DEBUG   SenderThread:45772 [sender.py:send():303] send: telemetry
+2022-11-22 19:38:51,267 DEBUG   SenderThread:45772 [sender.py:send():303] send: telemetry
+2022-11-22 19:38:51,267 DEBUG   SenderThread:45772 [sender.py:send():303] send: config
+2022-11-22 19:38:51,267 DEBUG   SenderThread:45772 [sender.py:send():303] send: config
+2022-11-22 19:38:51,352 INFO    Thread-17 :45772 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/files/conda-environment.yaml
+2022-11-22 19:38:51,352 INFO    Thread-17 :45772 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/files/output.log
+2022-11-22 19:38:51,353 INFO    Thread-17 :45772 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/files/wandb-metadata.json
+2022-11-22 19:38:52,023 INFO    Thread-20 :45772 [upload_job.py:push():143] Uploaded file /tmp/tmpt4fd24ggwandb/p34grj6j-wandb-metadata.json
+2022-11-22 19:38:53,360 INFO    Thread-17 :45772 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/files/output.log
+2022-11-22 19:39:06,272 DEBUG   HandlerThread:45772 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-22 19:39:06,273 DEBUG   SenderThread:45772 [sender.py:send_request():317] send_request: stop_status
+2022-11-22 19:39:12,378 INFO    Thread-17 :45772 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/files/config.yaml
+2022-11-22 19:39:21,642 DEBUG   HandlerThread:45772 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-22 19:39:21,643 DEBUG   SenderThread:45772 [sender.py:send_request():317] send_request: stop_status
+2022-11-22 19:39:28,387 INFO    Thread-17 :45772 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_193840-xj67w3tr/files/output.log
+2022-11-22 19:39:48,372 DEBUG   SystemMonitor:45772 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-22 19:39:48,374 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:40:18,379 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:40:48,380 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:41:18,388 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:41:48,387 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:42:18,394 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:42:48,399 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:43:18,403 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:43:48,410 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:44:18,414 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:44:48,415 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:45:18,416 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:45:48,418 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:46:18,424 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:46:48,430 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:47:18,429 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:47:48,435 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:48:18,436 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:48:48,442 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:49:18,442 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:49:48,456 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:50:18,454 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:50:48,453 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:51:18,460 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:51:48,456 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:52:18,457 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:52:48,459 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:53:18,461 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:53:48,467 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:54:18,471 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:54:48,471 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:55:18,483 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:55:48,474 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:56:18,480 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:56:48,480 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:57:18,511 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:57:48,491 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:58:18,493 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:58:48,499 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:59:18,499 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 19:59:48,509 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:00:18,501 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:00:48,507 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:01:18,512 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:01:48,517 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:02:18,521 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:02:48,522 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:03:18,537 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:03:48,529 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:04:18,534 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:04:48,540 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:05:18,540 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:05:48,555 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:06:18,556 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:06:48,561 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:07:18,566 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:07:48,567 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:08:18,568 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:08:48,569 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:09:18,570 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:09:48,571 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:10:18,572 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:10:48,573 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:11:18,579 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:11:48,579 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:12:18,594 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:12:48,586 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:13:18,588 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:13:48,589 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:14:18,595 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:14:48,596 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:15:18,611 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:15:48,608 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:16:18,613 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:16:48,614 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:17:18,638 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:17:48,621 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:18:18,621 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:18:48,626 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:19:18,632 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:19:48,638 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:20:18,642 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:20:48,651 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:21:18,649 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:21:48,663 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:22:18,655 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:22:48,656 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:23:18,658 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:23:48,659 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:24:18,665 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:24:48,670 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:25:18,671 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:25:48,686 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:26:18,674 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:26:48,676 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:27:18,682 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:27:48,689 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:28:18,693 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:28:48,698 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:29:18,698 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:29:48,710 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:30:18,706 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:30:48,711 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:31:18,712 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:31:48,714 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:32:18,719 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:32:48,725 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:33:18,725 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:33:48,740 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:34:18,736 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:34:48,741 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:35:18,746 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:35:48,751 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:36:18,751 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:36:48,756 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:37:18,758 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:37:48,763 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:38:18,769 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:38:48,772 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:39:18,777 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:39:48,782 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:40:18,787 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:40:48,792 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:41:18,797 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:41:48,799 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:42:18,801 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:42:48,806 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:43:18,811 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:43:48,816 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:44:18,816 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:44:48,830 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:45:18,827 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:45:48,832 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:46:18,837 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:46:48,842 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:47:18,847 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:47:48,851 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:48:18,856 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:48:48,861 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:49:18,866 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:49:48,865 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:50:18,888 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:50:48,876 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:51:18,881 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:51:48,887 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:52:18,888 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:52:48,889 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:53:18,894 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:53:48,900 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:54:18,905 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:54:48,910 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:55:18,915 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:55:48,915 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:56:18,928 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:56:48,921 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:57:18,927 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:57:48,935 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:58:18,935 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:58:48,949 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:59:18,945 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 20:59:48,949 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:00:18,954 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:00:48,960 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:01:18,965 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:01:48,972 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:02:18,975 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:02:48,977 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:03:18,983 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:03:48,988 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:04:18,992 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:04:48,997 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:05:19,001 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:05:49,006 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:06:19,011 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:06:49,016 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:07:19,021 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:07:49,026 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:08:19,031 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:08:49,031 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:09:19,045 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:09:49,042 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:10:19,047 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:10:49,052 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:11:19,056 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:11:49,061 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:12:19,066 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:12:49,071 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:13:19,073 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:13:49,086 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:14:19,083 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:14:49,088 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:15:19,093 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:15:49,100 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:16:19,104 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:16:49,109 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:17:19,114 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:17:49,118 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:18:19,124 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:18:49,129 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:19:19,134 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:19:49,139 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:20:19,144 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:20:49,150 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:21:19,150 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:21:49,163 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:22:19,162 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:22:49,162 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:23:19,163 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:23:49,169 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:24:19,174 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:24:49,179 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:25:19,180 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:25:49,194 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:26:19,191 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:26:49,195 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:27:19,196 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:27:49,202 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:28:19,201 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:28:49,216 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:29:19,212 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:29:49,212 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:30:19,213 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:30:49,220 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:31:19,226 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:31:49,230 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:32:19,230 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:32:49,240 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:33:19,240 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:33:49,241 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:34:19,242 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:34:49,243 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:35:19,251 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:35:49,250 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:36:19,257 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:36:49,257 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:37:19,261 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:37:49,262 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:38:19,268 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:38:49,273 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:39:19,278 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:39:49,281 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:40:19,286 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:40:49,290 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:41:19,295 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:41:49,295 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:42:19,306 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:42:49,309 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:43:19,309 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:43:49,311 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:44:19,310 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:44:49,311 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:45:19,312 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:45:49,317 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:46:19,316 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:46:49,317 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:47:19,318 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:47:49,319 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:48:19,324 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:48:49,328 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:49:19,331 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:49:49,335 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:50:19,338 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:50:49,342 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats
+2022-11-22 21:51:19,346 DEBUG   SenderThread:45772 [sender.py:send():303] send: stats

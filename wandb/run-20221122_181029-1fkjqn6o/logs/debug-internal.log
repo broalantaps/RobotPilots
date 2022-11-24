@@ -1,0 +1,9 @@
+2022-11-22 18:10:29,379 INFO    StreamThr :31017 [internal.py:wandb_internal():88] W&B internal server running at pid: 31017, started at: 2022-11-22 18:10:29.378930
+2022-11-22 18:10:29,380 DEBUG   HandlerThread:31017 [handler.py:handle_request():139] handle_request: status
+2022-11-22 18:10:29,381 DEBUG   SenderThread:31017 [sender.py:send_request():317] send_request: status
+2022-11-22 18:10:29,381 DEBUG   SenderThread:31017 [sender.py:send():303] send: header
+2022-11-22 18:10:29,381 DEBUG   SenderThread:31017 [sender.py:send():303] send: run
+2022-11-22 18:10:29,387 INFO    WriterThread:31017 [datastore.py:open_for_write():75] open: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181029-1fkjqn6o/run-1fkjqn6o.wandb
+2022-11-22 18:10:29,387 INFO    SenderThread:31017 [sender.py:_maybe_setup_resume():593] checking resume status for None/YOLOR/1fkjqn6o
+2022-11-22 18:10:30,581 INFO    SenderThread:31017 [dir_watcher.py:__init__():216] watching files in: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181029-1fkjqn6o/files
+2022-11-22 18:10:30,582 INFO    SenderThread:31017 [sender.py:_start_run_threads():928] run started: 1fkjqn6o with start time 1669111829.37653

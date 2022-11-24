@@ -1,0 +1,280 @@
+2022-11-22 21:39:43,738 INFO    StreamThr :55328 [internal.py:wandb_internal():88] W&B internal server running at pid: 55328, started at: 2022-11-22 21:39:43.738055
+2022-11-22 21:39:43,739 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: status
+2022-11-22 21:39:43,740 DEBUG   SenderThread:55328 [sender.py:send_request():317] send_request: status
+2022-11-22 21:39:43,741 INFO    WriterThread:55328 [datastore.py:open_for_write():75] open: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/run-20fkxjc4.wandb
+2022-11-22 21:39:43,741 DEBUG   SenderThread:55328 [sender.py:send():303] send: header
+2022-11-22 21:39:43,741 DEBUG   SenderThread:55328 [sender.py:send():303] send: run
+2022-11-22 21:39:43,747 INFO    SenderThread:55328 [sender.py:_maybe_setup_resume():593] checking resume status for None/YOLOR/20fkxjc4
+2022-11-22 21:39:48,741 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:39:49,377 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: check_version
+2022-11-22 21:39:49,380 INFO    SenderThread:55328 [dir_watcher.py:__init__():216] watching files in: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/files
+2022-11-22 21:39:49,380 INFO    SenderThread:55328 [sender.py:_start_run_threads():928] run started: 20fkxjc4 with start time 1669124383.73644
+2022-11-22 21:39:49,380 DEBUG   SenderThread:55328 [sender.py:send():303] send: summary
+2022-11-22 21:39:49,380 INFO    SenderThread:55328 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 21:39:49,381 DEBUG   SenderThread:55328 [sender.py:send_request():317] send_request: check_version
+2022-11-22 21:39:50,386 INFO    Thread-13 :55328 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/files/wandb-summary.json
+2022-11-22 21:39:53,760 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: run_start
+2022-11-22 21:39:53,762 DEBUG   HandlerThread:55328 [system_info.py:__init__():31] System info init
+2022-11-22 21:39:53,762 DEBUG   HandlerThread:55328 [system_info.py:__init__():46] System info init done
+2022-11-22 21:39:53,762 INFO    HandlerThread:55328 [system_monitor.py:start():150] Starting system monitor
+2022-11-22 21:39:53,762 INFO    SystemMonitor:55328 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-22 21:39:53,762 INFO    HandlerThread:55328 [system_monitor.py:probe():168] Collecting system info
+2022-11-22 21:39:53,763 INFO    SystemMonitor:55328 [interfaces.py:start():168] Started cpu
+2022-11-22 21:39:53,763 INFO    SystemMonitor:55328 [interfaces.py:start():168] Started disk
+2022-11-22 21:39:53,764 INFO    SystemMonitor:55328 [interfaces.py:start():168] Started gpu
+2022-11-22 21:39:53,764 INFO    SystemMonitor:55328 [interfaces.py:start():168] Started memory
+2022-11-22 21:39:53,764 INFO    SystemMonitor:55328 [interfaces.py:start():168] Started network
+2022-11-22 21:39:53,793 DEBUG   HandlerThread:55328 [system_info.py:probe():195] Probing system
+2022-11-22 21:39:53,796 DEBUG   HandlerThread:55328 [git.py:repo():40] git repository is invalid
+2022-11-22 21:39:53,796 DEBUG   HandlerThread:55328 [system_info.py:probe():241] Probing system done
+2022-11-22 21:39:53,796 DEBUG   HandlerThread:55328 [system_monitor.py:probe():177] {'os': 'Linux-5.15.0-53-generic-x86_64-with-glibc2.17', 'python': '3.8.13', 'heartbeatAt': '2022-11-22T13:39:53.793643', 'startedAt': '2022-11-22T13:39:43.732590', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/rp/DeepLearning/yolov7-main/train.py', 'codePath': 'train.py', 'host': 'rp', 'username': 'rp', 'executable': '/home/rp/Softwares/anaconda3/envs/dyh/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2775.7438125, 'min': 800.0, 'max': 4800.0}, 'cpu_freq_per_core': [{'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 1241.763, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}], 'disk': {'total': 937.3305015563965, 'used': 300.9023742675781}, 'gpu': 'NVIDIA GeForce RTX 3080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3080', 'memory_total': 10497294336}], 'memory': {'total': 31.272598266601562}}
+2022-11-22 21:39:53,796 INFO    HandlerThread:55328 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-22 21:39:53,796 INFO    HandlerThread:55328 [system_monitor.py:probe():181] Publishing system info
+2022-11-22 21:39:53,796 DEBUG   HandlerThread:55328 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-11-22 21:39:53,796 DEBUG   HandlerThread:55328 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-22 21:39:53,797 DEBUG   HandlerThread:55328 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2022-11-22 21:39:54,386 INFO    Thread-13 :55328 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/files/conda-environment.yaml
+2022-11-22 21:39:54,386 INFO    Thread-13 :55328 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/files/requirements.txt
+2022-11-22 21:39:56,147 DEBUG   HandlerThread:55328 [system_info.py:_save_conda():86] Saving conda packages done
+2022-11-22 21:39:56,147 INFO    HandlerThread:55328 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-22 21:39:56,164 DEBUG   SenderThread:55328 [sender.py:send():303] send: files
+2022-11-22 21:39:56,164 INFO    SenderThread:55328 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-22 21:39:56,167 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-22 21:39:56,167 DEBUG   SenderThread:55328 [sender.py:send_request():317] send_request: stop_status
+2022-11-22 21:39:56,386 INFO    Thread-13 :55328 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/files/conda-environment.yaml
+2022-11-22 21:39:56,387 INFO    Thread-13 :55328 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/files/wandb-metadata.json
+2022-11-22 21:39:57,763 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-22 21:40:02,765 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:40:04,715 DEBUG   SenderThread:55328 [sender.py:send():303] send: telemetry
+2022-11-22 21:40:04,715 DEBUG   SenderThread:55328 [sender.py:send():303] send: telemetry
+2022-11-22 21:40:04,715 DEBUG   SenderThread:55328 [sender.py:send():303] send: config
+2022-11-22 21:40:04,715 DEBUG   SenderThread:55328 [sender.py:send():303] send: config
+2022-11-22 21:40:04,718 DEBUG   SenderThread:55328 [sender.py:send():303] send: exit
+2022-11-22 21:40:04,718 INFO    SenderThread:55328 [sender.py:send_exit():442] handling exit code: 1
+2022-11-22 21:40:04,718 INFO    SenderThread:55328 [sender.py:send_exit():444] handling runtime: 3
+2022-11-22 21:40:04,719 INFO    SenderThread:55328 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 21:40:04,719 INFO    SenderThread:55328 [sender.py:send_exit():450] send defer
+2022-11-22 21:40:04,719 DEBUG   SenderThread:55328 [sender.py:send_request():317] send_request: poll_exit
+2022-11-22 21:40:04,720 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 21:40:04,720 INFO    HandlerThread:55328 [handler.py:handle_request_defer():162] handle defer: 0
+2022-11-22 21:40:04,720 DEBUG   SenderThread:55328 [sender.py:send_request():317] send_request: defer
+2022-11-22 21:40:04,720 INFO    SenderThread:55328 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-11-22 21:40:04,720 INFO    SenderThread:55328 [sender.py:transition_state():463] send defer: 1
+2022-11-22 21:40:04,720 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 21:40:04,720 INFO    HandlerThread:55328 [handler.py:handle_request_defer():162] handle defer: 1
+2022-11-22 21:40:04,720 INFO    HandlerThread:55328 [system_monitor.py:finish():160] Stopping system monitor
+2022-11-22 21:40:04,721 DEBUG   SystemMonitor:55328 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-22 21:40:04,721 INFO    HandlerThread:55328 [interfaces.py:finish():173] Joined cpu
+2022-11-22 21:40:04,721 INFO    HandlerThread:55328 [interfaces.py:finish():173] Joined disk
+2022-11-22 21:40:04,721 DEBUG   SystemMonitor:55328 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-11-22 21:40:04,721 DEBUG   SystemMonitor:55328 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-11-22 21:40:04,761 INFO    HandlerThread:55328 [interfaces.py:finish():173] Joined gpu
+2022-11-22 21:40:04,761 INFO    HandlerThread:55328 [interfaces.py:finish():173] Joined memory
+2022-11-22 21:40:04,761 INFO    HandlerThread:55328 [interfaces.py:finish():173] Joined network
+2022-11-22 21:40:04,761 DEBUG   SenderThread:55328 [sender.py:send_request():317] send_request: defer
+2022-11-22 21:40:04,761 INFO    SenderThread:55328 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-11-22 21:40:04,761 INFO    SenderThread:55328 [sender.py:transition_state():463] send defer: 2
+2022-11-22 21:40:04,761 DEBUG   SenderThread:55328 [sender.py:send():303] send: stats
+2022-11-22 21:40:04,762 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 21:40:04,762 INFO    HandlerThread:55328 [handler.py:handle_request_defer():162] handle defer: 2
+2022-11-22 21:40:04,762 DEBUG   SenderThread:55328 [sender.py:send_request():317] send_request: defer
+2022-11-22 21:40:04,762 INFO    SenderThread:55328 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-11-22 21:40:04,762 INFO    SenderThread:55328 [sender.py:transition_state():463] send defer: 3
+2022-11-22 21:40:04,762 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 21:40:04,762 INFO    HandlerThread:55328 [handler.py:handle_request_defer():162] handle defer: 3
+2022-11-22 21:40:04,762 DEBUG   SenderThread:55328 [sender.py:send_request():317] send_request: defer
+2022-11-22 21:40:04,762 INFO    SenderThread:55328 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-11-22 21:40:04,762 INFO    SenderThread:55328 [sender.py:transition_state():463] send defer: 4
+2022-11-22 21:40:04,762 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 21:40:04,762 INFO    HandlerThread:55328 [handler.py:handle_request_defer():162] handle defer: 4
+2022-11-22 21:40:04,762 DEBUG   SenderThread:55328 [sender.py:send():303] send: summary
+2022-11-22 21:40:04,763 INFO    SenderThread:55328 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 21:40:04,763 DEBUG   SenderThread:55328 [sender.py:send_request():317] send_request: defer
+2022-11-22 21:40:04,763 INFO    SenderThread:55328 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-11-22 21:40:04,763 INFO    SenderThread:55328 [sender.py:transition_state():463] send defer: 5
+2022-11-22 21:40:04,763 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 21:40:04,763 INFO    HandlerThread:55328 [handler.py:handle_request_defer():162] handle defer: 5
+2022-11-22 21:40:04,763 DEBUG   SenderThread:55328 [sender.py:send_request():317] send_request: defer
+2022-11-22 21:40:04,763 INFO    SenderThread:55328 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-11-22 21:40:05,391 INFO    Thread-13 :55328 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/files/wandb-summary.json
+2022-11-22 21:40:05,391 INFO    Thread-13 :55328 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/files/output.log
+2022-11-22 21:40:07,391 INFO    Thread-13 :55328 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/files/output.log
+2022-11-22 21:40:07,767 DEBUG   HandlerThread:55328 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:40:16,772 WARNING StreamThr :55328 [internal.py:is_dead():385] Internal process exiting, parent pid 55259 disappeared
+2022-11-22 21:40:16,773 ERROR   StreamThr :55328 [internal.py:wandb_internal():147] Internal process shutdown.
+2022-11-22 21:40:16,776 INFO    HandlerThread:55328 [handler.py:finish():814] shutting down handler
+2022-11-22 21:40:17,764 INFO    WriterThread:55328 [datastore.py:close():279] close: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_213943-20fkxjc4/run-20fkxjc4.wandb
+2022-11-22 21:40:53,650 ERROR   SenderThread:55328 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7fcca819c5b0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fcca819c5b0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 210, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fcca819c5b0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)'))
+2022-11-22 21:40:53,657 ERROR   StreamThr :55328 [internal.py:wandb_internal():163] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7fcca819c5b0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fcca819c5b0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 210, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fcca819c5b0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/apis/normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1516, in upsert_run
+    response = self.gql(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 165, in __call__
+    wandb.termlog(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/errors/term.py", line 39, in termlog
+    _log(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/errors/term.py", line 95, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/click/utils.py", line 299, in echo
+    file.write(out)  # type: ignore
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/internal_util.py", line 50, in run
+    self._run()
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/internal_util.py", line 101, in _run
+    self._process(record)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/internal.py", line 308, in _process
+    self._sm.send(record)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 305, in send
+    send_handler(record)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 319, in send_request
+    send_handler(record)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 482, in send_request_defer
+    self.debounce()
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 388, in debounce
+    self._debounce_config()
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 394, in _debounce_config
+    self._api.upsert_run(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/apis/normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1516, in upsert_run
+    response = self.gql(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 165, in __call__
+    wandb.termlog(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/errors/term.py", line 39, in termlog
+    _log(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/errors/term.py", line 95, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/click/utils.py", line 299, in echo
+    file.write(out)  # type: ignore
+wandb.errors.CommError: [Errno 32] Broken pipe
+2022-11-22 21:42:10,914 WARNING FileStreamThread:55328 [file_stream.py:request_with_retry():667] requests_with_retry encountered retryable exception: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')). func: <bound method Session.post of <requests.sessions.Session object at 0x7fcca8547fa0>>, args: ('https://api.wandb.ai/files/broalantaps/YOLOR/20fkxjc4/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"_wandb": {"runtime": 3}}']}, 'wandb-events.jsonl': {'offset': 0, 'content': ['{"system.network.sent": 68744.17, "system.network.recv": 91873.83, "system.cpu": 1.89, "system.cpu.0.cpu_percent": 8.37, "system.cpu.1.cpu_percent": 10.7, "system.cpu.2.cpu_percent": 9.03, "system.cpu.3.cpu_percent": 10.65, "system.cpu.4.cpu_percent": 20.68, "system.cpu.5.cpu_percent": 6.75, "system.cpu.6.cpu_percent": 18.77, "system.cpu.7.cpu_percent": 1.8, "system.cpu.8.cpu_percent": 4.15, "system.cpu.9.cpu_percent": 4.23, "system.cpu.10.cpu_percent": 1.93, "system.cpu.11.cpu_percent": 6.4, "system.cpu.12.cpu_percent": 10.55, "system.cpu.13.cpu_percent": 5.93, "system.cpu.14.cpu_percent": 11.82, "system.cpu.15.cpu_percent": 10.07, "system.proc.cpu.threads": 16, "system.proc.memory.availableMB": 5081.31, "system.memory": 84.12, "system.proc.memory.rssMB": 1920.08, "system.proc.memory.percent": 6.0, "system.disk": 33.8, "_wandb": true, "_timestamp": 1669124404.721795, "_runtime": 20.985355}']}, 'output.log': {'offset': 0, 'content': ['ERROR 2022-11-22T13:40:06.737748                  from  n    params  module                                  arguments\n', 'ERROR 2022-11-22T13:40:06.737748   0                -1  1       928  models.common.Conv                      [3, 32, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748   1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]\n', 'ERROR 2022-11-22T13:40:06.737748   2                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748   3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]\n', 'ERROR 2022-11-22T13:40:06.737748   4                -1  1      8320  models.common.Conv                      [128, 64, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748   5                -2  1      8320  models.common.Conv                      [128, 64, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748   6                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748   7                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748   8                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748   9                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  10  [-1, -3, -5, -6]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  11                -1  1     66048  models.common.Conv                      [256, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  12                -1  1         0  models.common.MP                        []\n', 'ERROR 2022-11-22T13:40:06.737748  13                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  14                -3  1     33024  models.common.Conv                      [256, 128, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  15                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]\n', 'ERROR 2022-11-22T13:40:06.737748  16          [-1, -3]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  17                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  18                -2  1     33024  models.common.Conv                      [256, 128, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  19                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  20                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  21                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  22                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  23  [-1, -3, -5, -6]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  24                -1  1    263168  models.common.Conv                      [512, 512, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  25                -1  1         0  models.common.MP                        []\n', 'ERROR 2022-11-22T13:40:06.737748  26                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  27                -3  1    131584  models.common.Conv                      [512, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  28                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]\n', 'ERROR 2022-11-22T13:40:06.737748  29          [-1, -3]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  30                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  31                -2  1    131584  models.common.Conv                      [512, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  32                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  33                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  34                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  35                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  36  [-1, -3, -5, -6]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  37                -1  1   1050624  models.common.Conv                      [1024, 1024, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  38                -1  1         0  models.common.MP                        []\n', 'ERROR 2022-11-22T13:40:06.737748  39                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  40                -3  1    525312  models.common.Conv                      [1024, 512, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  41                -1  1   2360320  models.common.Conv                      [512, 512, 3, 2]\n', 'ERROR 2022-11-22T13:40:06.737748  42          [-1, -3]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  43                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  44                -2  1    262656  models.common.Conv                      [1024, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  45                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  46                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  47                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  48                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  49  [-1, -3, -5, -6]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  50                -1  1   1050624  models.common.Conv                      [1024, 1024, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  51                -1  1   7609344  models.common.SPPCSPC                   [1024, 512, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  52                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]\n', "ERROR 2022-11-22T13:40:06.737748  53                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']\n", 'ERROR 2022-11-22T13:40:06.737748  54                37  1    262656  models.common.Conv                      [1024, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  55          [-1, -2]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  56                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  57                -2  1    131584  models.common.Conv                      [512, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  58                -1  1    295168  models.common.Conv                      [256, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  59                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  60                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  61                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  62[-1, -2, -3, -4, -5, -6]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  63                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  64                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]\n', "ERROR 2022-11-22T13:40:06.737748  65                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']\n", 'ERROR 2022-11-22T13:40:06.737748  66                24  1     65792  models.common.Conv                      [512, 128, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  67          [-1, -2]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  68                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  69                -2  1     33024  models.common.Conv                      [256, 128, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  70                -1  1     73856  models.common.Conv                      [128, 64, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  71                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  72                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  73                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  74[-1, -2, -3, -4, -5, -6]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  75                -1  1     65792  models.common.Conv                      [512, 128, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  76                -1  1         0  models.common.MP                        []\n', 'ERROR 2022-11-22T13:40:06.737748  77                -1  1     16640  models.common.Conv                      [128, 128, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  78                -3  1     16640  models.common.Conv                      [128, 128, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  79                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]\n', 'ERROR 2022-11-22T13:40:06.737748  80      [-1, -3, 63]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  81                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  82                -2  1    131584  models.common.Conv                      [512, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  83                -1  1    295168  models.common.Conv                      [256, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  84                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  85                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  86                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  87[-1, -2, -3, -4, -5, -6]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  88                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  89                -1  1         0  models.common.MP                        []\n', 'ERROR 2022-11-22T13:40:06.737748  90                -1  1     66048  models.common.Conv                      [256, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  91                -3  1     66048  models.common.Conv                      [256, 256, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  92                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]\n', 'ERROR 2022-11-22T13:40:06.737748  93      [-1, -3, 51]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748  94                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  95                -2  1    525312  models.common.Conv                      [1024, 512, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  96                -1  1   1180160  models.common.Conv                      [512, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  97                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  98                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748  99                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748 100[-1, -2, -3, -4, -5, -6]  1         0  models.common.Concat                    [1]\n', 'ERROR 2022-11-22T13:40:06.737748 101                -1  1   1049600  models.common.Conv                      [2048, 512, 1, 1]\n', 'ERROR 2022-11-22T13:40:06.737748 102                75  1    328704  models.common.RepConv                   [128, 256, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748 103                88  1   1312768  models.common.RepConv                   [256, 512, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748 104               101  1   5246976  models.common.RepConv                   [512, 1024, 3, 1]\n', 'ERROR 2022-11-22T13:40:06.737748 105   [102, 103, 104]  1    479265  models.yolo.Detect                      [80, [[12, 16, 19, 36, 40, 28], [36, 75, 76, 55, 72, 146], [142, 110, 192, 243, 459, 401]], [256, 512, 1024]]\n', 'ERROR 2022-11-22T13:40:06.737748 /home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /opt/conda/conda-bld/pytorch_1666642975312/work/aten/src/ATen/native/TensorShape.cpp:3190.)\n', 'ERROR 2022-11-22T13:40:06.737748   return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]\n', 'ERROR 2022-11-22T13:40:06.737748 Model Summary: 407 layers, 37641665 parameters, 37641665 gradients, 106.5 GFLOPS\n', 'ERROR 2022-11-22T13:40:06.737748 Traceback (most recent call last):\n', 'ERROR 2022-11-22T13:40:06.737748   File "/home/rp/DeepLearning/yolov7-main/train.py", line 617, in <module>\n', 'ERROR 2022-11-22T13:40:06.737748     train(hyp, opt, device, tb_writer)\n', 'ERROR 2022-11-22T13:40:06.737748   File "/home/rp/DeepLearning/yolov7-main/train.py", line 90, in train\n', "ERROR 2022-11-22T13:40:06.737748     state_dict = ckpt['model'].float().state_dict()  # to FP32\n", 'ERROR 2022-11-22T13:40:06.737748   File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/torch/nn/modules/module.py", line 821, in float\n', 'ERROR 2022-11-22T13:40:06.737748     return self._apply(lambda t: t.float() if t.is_floating_point() else t)\n', 'ERROR 2022-11-22T13:40:06.737748   File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/torch/nn/modules/module.py", line 639, in _apply\n', 'ERROR 2022-11-22T13:40:06.737748     module._apply(fn)\n', 'ERROR 2022-11-22T13:40:06.737748   File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/torch/nn/modules/module.py", line 639, in _apply\n', 'ERROR 2022-11-22T13:40:06.737748     module._apply(fn)\n', 'ERROR 2022-11-22T13:40:06.737748   File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/torch/nn/modules/module.py", line 639, in _apply\n', 'ERROR 2022-11-22T13:40:06.737748     module._apply(fn)\n', 'ERROR 2022-11-22T13:40:06.737748   File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/torch/nn/modules/module.py", line 662, in _apply\n', 'ERROR 2022-11-22T13:40:06.737748     param_applied = fn(param)\n', 'ERROR 2022-11-22T13:40:06.737748   File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/torch/nn/modules/module.py", line 821, in <lambda>\n', 'ERROR 2022-11-22T13:40:06.737748     return self._apply(lambda t: t.float() if t.is_floating_point() else t)\n', 'ERROR 2022-11-22T13:40:06.737748 torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 9.78 GiB total capacity; 242.30 MiB already allocated; 27.56 MiB free; 252.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF\n']}}, 'dropped': 0}}
+2022-11-22 21:42:25,865 INFO    Thread-16 :55328 [upload_job.py:push():143] Uploaded file /tmp/tmpoxws8m3qwandb/bwflhcjl-wandb-metadata.json

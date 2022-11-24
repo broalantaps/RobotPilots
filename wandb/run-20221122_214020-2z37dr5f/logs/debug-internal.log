@@ -1,0 +1,77 @@
+2022-11-22 21:40:20,798 INFO    StreamThr :55490 [internal.py:wandb_internal():88] W&B internal server running at pid: 55490, started at: 2022-11-22 21:40:20.797745
+2022-11-22 21:40:20,801 DEBUG   HandlerThread:55490 [handler.py:handle_request():139] handle_request: status
+2022-11-22 21:40:20,803 DEBUG   SenderThread:55490 [sender.py:send_request():317] send_request: status
+2022-11-22 21:40:20,804 INFO    WriterThread:55490 [datastore.py:open_for_write():75] open: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_214020-2z37dr5f/run-2z37dr5f.wandb
+2022-11-22 21:40:20,804 DEBUG   SenderThread:55490 [sender.py:send():303] send: header
+2022-11-22 21:40:20,805 DEBUG   SenderThread:55490 [sender.py:send():303] send: run
+2022-11-22 21:40:20,824 INFO    SenderThread:55490 [sender.py:_maybe_setup_resume():593] checking resume status for None/YOLOR/2z37dr5f
+2022-11-22 21:40:25,803 DEBUG   HandlerThread:55490 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:40:30,806 DEBUG   HandlerThread:55490 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:40:35,809 DEBUG   HandlerThread:55490 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:40:40,810 DEBUG   HandlerThread:55490 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:40:45,814 DEBUG   HandlerThread:55490 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:40:50,815 DEBUG   HandlerThread:55490 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:40:55,819 DEBUG   HandlerThread:55490 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:41:00,822 DEBUG   HandlerThread:55490 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:41:22,924 ERROR   SenderThread:55490 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f6d1468d0a0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f6d1468d0a0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 210, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/rp/Softwares/anaconda3/envs/dyh/lib/python3.8/site-packages/requests/adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f6d1468d0a0>, 'Connection to api.wandb.ai timed out. (connect timeout=10)'))
+2022-11-22 21:42:27,713 INFO    SenderThread:55490 [dir_watcher.py:__init__():216] watching files in: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_214020-2z37dr5f/files
+2022-11-22 21:42:27,713 INFO    SenderThread:55490 [sender.py:_start_run_threads():928] run started: 2z37dr5f with start time 1669124420.794492

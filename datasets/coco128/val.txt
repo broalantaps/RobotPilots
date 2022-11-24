@@ -1,0 +1,2 @@
+datasets/coco128/images/train2017/0002.png
+

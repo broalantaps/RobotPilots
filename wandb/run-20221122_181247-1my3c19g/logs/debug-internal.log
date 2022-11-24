@@ -1,0 +1,170 @@
+2022-11-22 18:12:47,536 INFO    StreamThr :31468 [internal.py:wandb_internal():88] W&B internal server running at pid: 31468, started at: 2022-11-22 18:12:47.535750
+2022-11-22 18:12:47,536 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: status
+2022-11-22 18:12:47,537 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: status
+2022-11-22 18:12:47,538 DEBUG   SenderThread:31468 [sender.py:send():303] send: header
+2022-11-22 18:12:47,538 DEBUG   SenderThread:31468 [sender.py:send():303] send: run
+2022-11-22 18:12:47,543 INFO    WriterThread:31468 [datastore.py:open_for_write():75] open: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/run-1my3c19g.wandb
+2022-11-22 18:12:47,544 INFO    SenderThread:31468 [sender.py:_maybe_setup_resume():593] checking resume status for None/YOLOR/1my3c19g
+2022-11-22 18:12:49,041 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: check_version
+2022-11-22 18:12:49,050 INFO    SenderThread:31468 [dir_watcher.py:__init__():216] watching files in: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files
+2022-11-22 18:12:49,051 INFO    SenderThread:31468 [sender.py:_start_run_threads():928] run started: 1my3c19g with start time 1669111967.534047
+2022-11-22 18:12:49,051 DEBUG   SenderThread:31468 [sender.py:send():303] send: summary
+2022-11-22 18:12:49,052 INFO    SenderThread:31468 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 18:12:49,052 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: check_version
+2022-11-22 18:12:50,025 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: run_start
+2022-11-22 18:12:50,029 DEBUG   HandlerThread:31468 [system_info.py:__init__():31] System info init
+2022-11-22 18:12:50,029 DEBUG   HandlerThread:31468 [system_info.py:__init__():46] System info init done
+2022-11-22 18:12:50,029 INFO    HandlerThread:31468 [system_monitor.py:start():150] Starting system monitor
+2022-11-22 18:12:50,029 INFO    SystemMonitor:31468 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-22 18:12:50,029 INFO    HandlerThread:31468 [system_monitor.py:probe():168] Collecting system info
+2022-11-22 18:12:50,030 INFO    SystemMonitor:31468 [interfaces.py:start():168] Started cpu
+2022-11-22 18:12:50,030 INFO    SystemMonitor:31468 [interfaces.py:start():168] Started disk
+2022-11-22 18:12:50,031 INFO    SystemMonitor:31468 [interfaces.py:start():168] Started gpu
+2022-11-22 18:12:50,032 INFO    SystemMonitor:31468 [interfaces.py:start():168] Started memory
+2022-11-22 18:12:50,033 INFO    SystemMonitor:31468 [interfaces.py:start():168] Started network
+2022-11-22 18:12:50,051 INFO    Thread-13 :31468 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/wandb-summary.json
+2022-11-22 18:12:50,053 DEBUG   HandlerThread:31468 [system_info.py:probe():195] Probing system
+2022-11-22 18:12:50,056 DEBUG   HandlerThread:31468 [git.py:repo():40] git repository is invalid
+2022-11-22 18:12:50,056 DEBUG   HandlerThread:31468 [system_info.py:probe():241] Probing system done
+2022-11-22 18:12:50,056 DEBUG   HandlerThread:31468 [system_monitor.py:probe():177] {'os': 'Linux-5.15.0-53-generic-x86_64-with-glibc2.17', 'python': '3.8.13', 'heartbeatAt': '2022-11-22T10:12:50.053537', 'startedAt': '2022-11-22T10:12:47.529098', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/rp/DeepLearning/yolov7-main/train.py', 'codePath': 'train.py', 'host': 'rp', 'username': 'rp', 'executable': '/home/rp/Softwares/anaconda3/envs/dyh/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3006.7975625, 'min': 800.0, 'max': 4800.0}, 'cpu_freq_per_core': [{'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 2900.0, 'min': 800.0, 'max': 4800.0}, {'current': 4608.761, 'min': 800.0, 'max': 4800.0}], 'disk': {'total': 937.3305015563965, 'used': 294.67596435546875}, 'gpu': 'NVIDIA GeForce RTX 3080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3080', 'memory_total': 10497294336}], 'memory': {'total': 31.272598266601562}}
+2022-11-22 18:12:50,056 INFO    HandlerThread:31468 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-22 18:12:50,056 INFO    HandlerThread:31468 [system_monitor.py:probe():181] Publishing system info
+2022-11-22 18:12:50,056 DEBUG   HandlerThread:31468 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-11-22 18:12:50,056 DEBUG   HandlerThread:31468 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-22 18:12:50,056 DEBUG   HandlerThread:31468 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2022-11-22 18:12:51,051 INFO    Thread-13 :31468 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/conda-environment.yaml
+2022-11-22 18:12:51,051 INFO    Thread-13 :31468 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/requirements.txt
+2022-11-22 18:12:52,511 DEBUG   HandlerThread:31468 [system_info.py:_save_conda():86] Saving conda packages done
+2022-11-22 18:12:52,512 INFO    HandlerThread:31468 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-22 18:12:52,528 DEBUG   SenderThread:31468 [sender.py:send():303] send: files
+2022-11-22 18:12:52,528 INFO    SenderThread:31468 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-22 18:12:52,531 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-22 18:12:52,531 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: stop_status
+2022-11-22 18:12:52,854 DEBUG   SenderThread:31468 [sender.py:send():303] send: telemetry
+2022-11-22 18:12:52,854 DEBUG   SenderThread:31468 [sender.py:send():303] send: telemetry
+2022-11-22 18:12:52,854 DEBUG   SenderThread:31468 [sender.py:send():303] send: config
+2022-11-22 18:12:52,855 DEBUG   SenderThread:31468 [sender.py:send():303] send: config
+2022-11-22 18:12:53,018 DEBUG   SenderThread:31468 [sender.py:send():303] send: exit
+2022-11-22 18:12:53,018 INFO    SenderThread:31468 [sender.py:send_exit():442] handling exit code: 1
+2022-11-22 18:12:53,018 INFO    SenderThread:31468 [sender.py:send_exit():444] handling runtime: 2
+2022-11-22 18:12:53,018 INFO    SenderThread:31468 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 18:12:53,018 INFO    SenderThread:31468 [sender.py:send_exit():450] send defer
+2022-11-22 18:12:53,018 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:53,018 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 0
+2022-11-22 18:12:53,018 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:53,018 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-11-22 18:12:53,018 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 1
+2022-11-22 18:12:53,019 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:53,019 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 1
+2022-11-22 18:12:53,019 INFO    HandlerThread:31468 [system_monitor.py:finish():160] Stopping system monitor
+2022-11-22 18:12:53,019 DEBUG   SystemMonitor:31468 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-22 18:12:53,019 DEBUG   SystemMonitor:31468 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-11-22 18:12:53,019 DEBUG   SystemMonitor:31468 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-11-22 18:12:53,019 INFO    HandlerThread:31468 [interfaces.py:finish():173] Joined cpu
+2022-11-22 18:12:53,019 INFO    HandlerThread:31468 [interfaces.py:finish():173] Joined disk
+2022-11-22 18:12:53,051 INFO    Thread-13 :31468 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/wandb-summary.json
+2022-11-22 18:12:53,051 INFO    Thread-13 :31468 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/conda-environment.yaml
+2022-11-22 18:12:53,051 INFO    Thread-13 :31468 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/output.log
+2022-11-22 18:12:53,051 INFO    Thread-13 :31468 [dir_watcher.py:_on_file_created():275] file/dir created: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/wandb-metadata.json
+2022-11-22 18:12:53,053 INFO    HandlerThread:31468 [interfaces.py:finish():173] Joined gpu
+2022-11-22 18:12:53,053 INFO    HandlerThread:31468 [interfaces.py:finish():173] Joined memory
+2022-11-22 18:12:53,053 INFO    HandlerThread:31468 [interfaces.py:finish():173] Joined network
+2022-11-22 18:12:53,053 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:53,053 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-11-22 18:12:53,053 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 2
+2022-11-22 18:12:53,053 DEBUG   SenderThread:31468 [sender.py:send():303] send: stats
+2022-11-22 18:12:53,053 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:53,054 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 2
+2022-11-22 18:12:53,054 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:53,054 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-11-22 18:12:53,054 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 3
+2022-11-22 18:12:53,055 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:53,055 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 3
+2022-11-22 18:12:53,055 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:53,055 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-11-22 18:12:53,055 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 4
+2022-11-22 18:12:53,055 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:53,055 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 4
+2022-11-22 18:12:53,055 DEBUG   SenderThread:31468 [sender.py:send():303] send: summary
+2022-11-22 18:12:53,055 INFO    SenderThread:31468 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 18:12:53,055 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:53,055 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-11-22 18:12:53,056 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 5
+2022-11-22 18:12:53,056 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:53,056 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 5
+2022-11-22 18:12:53,056 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:53,056 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-11-22 18:12:53,435 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 6
+2022-11-22 18:12:53,435 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:53,435 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 6
+2022-11-22 18:12:53,436 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:53,436 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-11-22 18:12:53,468 INFO    Thread-16 :31468 [upload_job.py:push():143] Uploaded file /tmp/tmpell2xnzkwandb/16enqf5h-wandb-metadata.json
+2022-11-22 18:12:54,018 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-22 18:12:54,051 INFO    Thread-13 :31468 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/wandb-summary.json
+2022-11-22 18:12:54,051 INFO    Thread-13 :31468 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/config.yaml
+2022-11-22 18:12:55,028 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 7
+2022-11-22 18:12:55,029 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: poll_exit
+2022-11-22 18:12:55,030 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:55,031 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 7
+2022-11-22 18:12:55,032 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:55,032 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-11-22 18:12:55,032 INFO    SenderThread:31468 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-11-22 18:12:55,052 INFO    Thread-13 :31468 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/output.log
+2022-11-22 18:12:55,053 INFO    SenderThread:31468 [dir_watcher.py:finish():392] scan: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files
+2022-11-22 18:12:55,054 INFO    SenderThread:31468 [dir_watcher.py:finish():406] scan save: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/wandb-summary.json wandb-summary.json
+2022-11-22 18:12:55,054 INFO    SenderThread:31468 [dir_watcher.py:finish():406] scan save: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/config.yaml config.yaml
+2022-11-22 18:12:55,063 INFO    SenderThread:31468 [dir_watcher.py:finish():406] scan save: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/output.log output.log
+2022-11-22 18:12:55,072 INFO    SenderThread:31468 [dir_watcher.py:finish():406] scan save: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/requirements.txt requirements.txt
+2022-11-22 18:12:55,073 INFO    SenderThread:31468 [dir_watcher.py:finish():406] scan save: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/conda-environment.yaml conda-environment.yaml
+2022-11-22 18:12:55,078 INFO    SenderThread:31468 [dir_watcher.py:finish():406] scan save: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/wandb-metadata.json wandb-metadata.json
+2022-11-22 18:12:55,079 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 8
+2022-11-22 18:12:55,088 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:55,088 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 8
+2022-11-22 18:12:55,097 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:55,098 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-11-22 18:12:55,098 INFO    SenderThread:31468 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-22 18:12:56,158 INFO    Thread-19 :31468 [upload_job.py:push():143] Uploaded file /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/output.log
+2022-11-22 18:12:56,168 INFO    Thread-18 :31468 [upload_job.py:push():143] Uploaded file /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/config.yaml
+2022-11-22 18:12:56,250 INFO    Thread-17 :31468 [upload_job.py:push():143] Uploaded file /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/wandb-summary.json
+2022-11-22 18:12:56,305 INFO    Thread-21 :31468 [upload_job.py:push():143] Uploaded file /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/conda-environment.yaml
+2022-11-22 18:12:56,320 INFO    Thread-20 :31468 [upload_job.py:push():143] Uploaded file /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/files/requirements.txt
+2022-11-22 18:12:56,520 INFO    Thread-12 :31468 [sender.py:transition_state():463] send defer: 9
+2022-11-22 18:12:56,521 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:56,522 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 9
+2022-11-22 18:12:56,522 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:56,523 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-11-22 18:12:56,523 INFO    SenderThread:31468 [file_pusher.py:join():173] waiting for file pusher
+2022-11-22 18:12:56,523 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 10
+2022-11-22 18:12:56,524 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:56,524 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 10
+2022-11-22 18:12:56,524 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:56,525 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-11-22 18:12:56,849 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 11
+2022-11-22 18:12:56,850 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:56,850 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 11
+2022-11-22 18:12:56,850 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:56,850 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 11
+2022-11-22 18:12:56,851 INFO    SenderThread:31468 [sender.py:transition_state():463] send defer: 12
+2022-11-22 18:12:56,852 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 18:12:56,852 INFO    HandlerThread:31468 [handler.py:handle_request_defer():162] handle defer: 12
+2022-11-22 18:12:56,853 DEBUG   SenderThread:31468 [sender.py:send():303] send: final
+2022-11-22 18:12:56,853 DEBUG   SenderThread:31468 [sender.py:send():303] send: footer
+2022-11-22 18:12:56,854 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: defer
+2022-11-22 18:12:56,854 INFO    SenderThread:31468 [sender.py:send_request_defer():459] handle sender defer: 12
+2022-11-22 18:12:56,856 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-22 18:12:56,857 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: poll_exit
+2022-11-22 18:12:56,859 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: server_info
+2022-11-22 18:12:56,860 DEBUG   SenderThread:31468 [sender.py:send_request():317] send_request: server_info
+2022-11-22 18:12:56,867 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: get_summary
+2022-11-22 18:12:56,868 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: sampled_history
+2022-11-22 18:12:57,725 INFO    MainThread:31468 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-11-22 18:12:57,726 INFO    MainThread:31468 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-11-22 18:12:57,726 INFO    MainThread:31468 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-11-22 18:12:57,727 DEBUG   HandlerThread:31468 [handler.py:handle_request():139] handle_request: shutdown
+2022-11-22 18:12:57,727 INFO    HandlerThread:31468 [handler.py:finish():814] shutting down handler
+2022-11-22 18:12:57,855 INFO    WriterThread:31468 [datastore.py:close():279] close: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_181247-1my3c19g/run-1my3c19g.wandb
+2022-11-22 18:12:58,725 INFO    SenderThread:31468 [sender.py:finish():1331] shutting down sender
+2022-11-22 18:12:58,725 INFO    SenderThread:31468 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-22 18:12:58,725 INFO    SenderThread:31468 [file_pusher.py:join():173] waiting for file pusher
+2022-11-22 18:12:58,732 INFO    MainThread:31468 [internal.py:handle_exit():78] Internal process exited

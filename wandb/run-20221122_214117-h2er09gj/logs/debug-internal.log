@@ -1,0 +1,16 @@
+2022-11-22 21:41:17,361 INFO    StreamThr :55564 [internal.py:wandb_internal():88] W&B internal server running at pid: 55564, started at: 2022-11-22 21:41:17.359915
+2022-11-22 21:41:17,362 DEBUG   HandlerThread:55564 [handler.py:handle_request():139] handle_request: status
+2022-11-22 21:41:17,365 DEBUG   SenderThread:55564 [sender.py:send_request():317] send_request: status
+2022-11-22 21:41:17,366 INFO    WriterThread:55564 [datastore.py:open_for_write():75] open: /home/rp/DeepLearning/yolov7-main/wandb/run-20221122_214117-h2er09gj/run-h2er09gj.wandb
+2022-11-22 21:41:17,366 DEBUG   SenderThread:55564 [sender.py:send():303] send: header
+2022-11-22 21:41:17,367 DEBUG   SenderThread:55564 [sender.py:send():303] send: run
+2022-11-22 21:41:17,388 INFO    SenderThread:55564 [sender.py:_maybe_setup_resume():593] checking resume status for None/YOLOR/h2er09gj
+2022-11-22 21:41:22,365 DEBUG   HandlerThread:55564 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:41:27,366 DEBUG   HandlerThread:55564 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:41:32,370 DEBUG   HandlerThread:55564 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:41:37,373 DEBUG   HandlerThread:55564 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:41:42,375 DEBUG   HandlerThread:55564 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:41:47,378 DEBUG   HandlerThread:55564 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:41:52,381 DEBUG   HandlerThread:55564 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:41:57,384 DEBUG   HandlerThread:55564 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 21:42:02,387 DEBUG   HandlerThread:55564 [handler.py:handle_request():139] handle_request: keepalive
