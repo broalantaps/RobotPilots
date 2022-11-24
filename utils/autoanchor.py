@@ -5,9 +5,9 @@ import torch
 import yaml
 from scipy.cluster.vq import kmeans
 from tqdm import tqdm
+#from utils.datasets import min_rect
 
 from utils.general import colorstr
-
 
 def check_anchor_order(m):
     # Check anchor order against stride order for YOLO Detect() module m, and correct if necessary
@@ -27,7 +27,26 @@ def check_anchors(dataset, model, thr=4.0, imgsz=640):
     m = model.module.model[-1] if hasattr(model, 'module') else model.model[-1]  # Detect()
     shapes = imgsz * dataset.shapes / dataset.shapes.max(1, keepdims=True)
     scale = np.random.uniform(0.9, 1.1, size=(shapes.shape[0], 1))  # augment scale
-    wh = torch.tensor(np.concatenate([l[:, 3:5] * s for s, l in zip(shapes * scale, dataset.labels)])).float()  # wh
+    label = np.array(dataset.labels, dtype=np.float64)
+    x = label[:, :, 1::2]
+    y = label[:, :, 2::2]
+    cls = label[:, :, :1]
+    x_min = x.min(2).reshape(-1, 1)
+    x_max = x.max(2).reshape(-1, 1)
+    y_min = y.min(2).reshape(-1, 1)
+    y_max = y.max(2).reshape(-1, 1)
+    cls = cls.reshape(-1, 1)
+    # print(cls.shape)
+    w = x_max - x_min
+    h = y_max - y_min
+    # print(w,h)
+    # print(x_min.shape)
+    rect_label = list((np.concatenate((cls,
+                                 x_max - w / 2,
+                                 y_max - h / 2,
+                                 w,
+                                 h), axis=1),))
+    wh = torch.tensor(np.concatenate([l[:, 3:5] * s for s, l in zip(shapes * scale, rect_label)])).float()  # wh
 
     def metric(k):  # compute metric
         r = wh[:, None] / k[None]
@@ -110,8 +129,26 @@ def kmean_anchors(path='./data/coco.yaml', n=9, img_size=640, thr=4.0, gen=1000,
 
     # Get label wh
     shapes = img_size * dataset.shapes / dataset.shapes.max(1, keepdims=True)
-    wh0 = np.concatenate([l[:, 3:5] * s for s, l in zip(shapes, dataset.labels)])  # wh
-
+    label = np.array(dataset.labels, dtype=np.float64)
+    x = label[:, :, 1::2]
+    y = label[:, :, 2::2]
+    cls = label[:, :, :1]
+    x_min = x.min(2).reshape(-1, 1)
+    x_max = x.max(2).reshape(-1, 1)
+    y_min = y.min(2).reshape(-1, 1)
+    y_max = y.max(2).reshape(-1, 1)
+    cls = cls.reshape(-1, 1)
+    # print(cls.shape)
+    w = x_max - x_min
+    h = y_max - y_min
+    # print(w,h)
+    # print(x_min.shape)
+    rect_label = list((np.concatenate((cls,
+                                       x_max - w / 2,
+                                       y_max - h / 2,
+                                       w,
+                                       h), axis=1),))
+    wh0 = np.concatenate([l[:, 3:5] * s for s, l in zip(shapes, rect_label)])  # wh
     # Filter
     i = (wh0 < 3.0).any(1).sum()
     if i:
