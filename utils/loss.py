@@ -3,10 +3,11 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
+import numpy as np
 from utils.general import bbox_iou, bbox_alpha_iou, box_iou, box_giou, box_diou, box_ciou, xywh2xyxy
 from utils.torch_utils import is_parallel
-
+from utils.datasets import min_rect
+from utils.datasets import LoadImagesAndLabels
 
 def smooth_BCE(eps=0.1):  # https://github.com/ultralytics/yolov3/issues/238#issuecomment-598028441
     # return positive, negative label smoothing BCE targets
@@ -501,7 +502,7 @@ class ComputeLoss:
         # Build targets for compute_loss(), input targets(image,class,x,y,w,h)
         na, nt = self.na, targets.shape[0]  # number of anchors, targets
         tcls, tbox, indices, anch = [], [], [], []
-        gain = torch.ones(7, device=targets.device).long()  # normalized to gridspace gain
+        gain = torch.ones(11, device=targets.device).long()  # normalized to gridspace gain
         ai = torch.arange(na, device=targets.device).float().view(na, 1).repeat(1, nt)  # same as .repeat_interleave(nt)
         targets = torch.cat((targets.repeat(na, 1, 1), ai[:, :, None]), 2)  # append anchor indices
 
@@ -513,20 +514,39 @@ class ComputeLoss:
 
         for i in range(self.nl):
             anchors = self.anchors[i]
-            gain[2:6] = torch.tensor(p[i].shape)[[3, 2, 3, 2]]  # xyxy gain
+            gain[2:10] = torch.tensor(p[i].shape)[[3, 2, 3, 2, 3, 2, 3, 2]]  # xyxy gain
 
             # Match targets to anchors
             #te zheng tu size
             t = targets * gain
             if nt:
                 # Matches
-                r = t[:, :, 4:6] / anchors[:, None]  # wh ratio
+                tt = t.clone()
+                #print(tt.size())
+
+                x_max = torch.max(tt[:, :, [2, 4, 6, 8]], 2).values.view(tt.size(0), 1, 1)
+                x_min = torch.min(tt[:, :, [2, 4, 6, 8]], 2).values.view(tt.size(0), 1, 1)
+                #print(x_max.size())
+                y_max = torch.max(tt[:, :, [3, 5, 7, 9]], 2).values.view(tt.size(0), 1, 1)
+                y_min = torch.min(tt[:, :, [3, 5, 7, 9]], 2).values.view(tt.size(0), 1, 1)
+
+                w = x_max - x_min
+                h = y_max - y_min
+                x_mid = x_max - w / 2
+                y_mid = y_max - h / 2
+                #new_wh = torch.tensor(t.shape[0],2)
+                t = torch.cat((t, x_mid, y_mid, w, h), dim=2 )
+
+                #print(t[:, :, 13:15])
+                r = t[:, :, 13:15] / anchors[:, None]  # wh ratio
                 j = torch.max(r, 1. / r).max(2)[0] < self.hyp['anchor_t']  # compare
                 # j = wh_iou(anchors, t[:, 4:6]) > model.hyp['iou_t']  # iou(3,n)=wh_iou(anchors(3,2), gwh(n,2))
                 t = t[j]  # filter
 
                 # Offsets
-                gxy = t[:, 2:4]  # grid xy
+                gxy = t[:, 11:13]  # gt grid xy
+                #print(gxy)
+                ###### mei yong
                 gxi = gain[[2, 3]] - gxy  # inverse
                 j, k = ((gxy % 1. < g) & (gxy > 1.)).T
                 l, m = ((gxi % 1. < g) & (gxi > 1.)).T
@@ -539,18 +559,34 @@ class ComputeLoss:
 
             # Define
             b, c = t[:, :2].long().T  # batch_size_index, class
-            gxy = t[:, 2:4]  # grid xy
-            gwh = t[:, 4:6]  # grid wh
+            gxy = t[:, 11:13]  # grid xy
+            gwh = t[:, 13:15]  # grid wh
             gij = (gxy - offsets).long()
+            gij = gij.float()
             gi, gj = gij.T  # grid xy indices
-
+            #print(gij)
             # Append
-            a = t[:, 6].long()  # anchor indices
+            anchors_wh = anchors / 2
+            print(anchors_wh)
+            anchors_fourpoints = torch.cat((gij, gij, gij, gij), 1)
+            anchors_fourpoints.float()
+            #print(anchors_fourpoints)
+            anchors_fourpoints[:, 0] = anchors_fourpoints[:, 0] - anchors_wh[:, 0] # x1
+            anchors_fourpoints[:, 1] = anchors_fourpoints[:, 1] - anchors_wh[:, 1] # y1
+            anchors_fourpoints[:, 2] = anchors_fourpoints[:, 2] - anchors_wh[:, 0] # x2
+            anchors_fourpoints[:, 3] = anchors_fourpoints[:, 3] + anchors_wh[:, 1] # y2
+            anchors_fourpoints[:, 4] = anchors_fourpoints[:, 4] + anchors_wh[:, 0] # x3
+            anchors_fourpoints[:, 5] = anchors_fourpoints[:, 5] + anchors_wh[:, 1] # y3
+            anchors_fourpoints[:, 6] = anchors_fourpoints[:, 6] + anchors_wh[:, 0] # x4
+            anchors_fourpoints[:, 7] = anchors_fourpoints[:, 7] - anchors_wh[:, 1] # y4
+            print(anchors_fourpoints)
+            a = t[:, 10].long()  # anchor indices
             indices.append((b, a, gj.clamp_(0, gain[3] - 1), gi.clamp_(0, gain[2] - 1)))  # image, anchor, grid indices
-            tbox.append(torch.cat((gxy - gij, gwh), 1))  # box xiangduizuoshangjiaodepianyizuobiao
-            anch.append(anchors[a])  # anchors
+            #tbox.append(torch.cat((gxy - gij, gwh), 1))  # box xiangduizuoshangjiaodepianyizuobiao
+            tbox.append(torch.cat((gxy, gwh), 1))
+            #anch.append(anchors[a])  # anchors
+            anch.append(anchors_fourpoints[a])
             tcls.append(c)  # class
-
         return tcls, tbox, indices, anch
 
 
@@ -797,7 +833,7 @@ class ComputeLossOTA:
         # Build targets for compute_loss(), input targets(image,class,x,y,w,h)
         na, nt = self.na, targets.shape[0]  # number of anchors, targets
         indices, anch = [], []
-        gain = torch.ones(7, device=targets.device).long()  # normalized to gridspace gain
+        gain = torch.ones(11, device=targets.device).long()  # normalized to gridspace gain
         ai = torch.arange(na, device=targets.device).float().view(na, 1).repeat(1, nt)  # anchor index same as .repeat_interleave(nt)
         targets = torch.cat((targets.repeat(na, 1, 1), ai[:, :, None]), 2)  # append anchor indices
 
@@ -809,7 +845,8 @@ class ComputeLossOTA:
 
         for i in range(self.nl):
             anchors = self.anchors[i]
-            gain[2:6] = torch.tensor(p[i].shape)[[3, 2, 3, 2]]  # xyxy gain
+            print()
+            gain[2:10] = torch.tensor(p[i].shape)[[3, 2, 3, 2, 3, 2, 3, 2]]  # xyxy gain
 
             # Match targets to anchors
             t = targets * gain
@@ -1137,7 +1174,7 @@ class ComputeLossBinOTA:
 
         for i in range(self.nl):
             anchors = self.anchors[i]
-            gain[2:6] = torch.tensor(p[i].shape)[[3, 2, 3, 2]]  # xyxy gain
+            gain[2:10] = torch.tensor(p[i].shape)[[3, 2, 3, 2, 3, 2, 3, 2]]  # xyxy gain
 
             # Match targets to anchors
             t = targets * gain
@@ -1608,7 +1645,7 @@ class ComputeLossAuxOTA:
 
         for i in range(self.nl):
             anchors = self.anchors[i]
-            gain[2:6] = torch.tensor(p[i].shape)[[3, 2, 3, 2]]  # xyxy gain
+            gain[2:10] = torch.tensor(p[i].shape)[[3, 2, 3, 2, 3, 2, 3, 2]]  # xyxy gain
 
             # Match targets to anchors
             t = targets * gain
@@ -1661,7 +1698,7 @@ class ComputeLossAuxOTA:
 
         for i in range(self.nl):
             anchors = self.anchors[i]
-            gain[2:6] = torch.tensor(p[i].shape)[[3, 2, 3, 2]]  # xyxy gain
+            gain[2:10] = torch.tensor(p[i].shape)[[3, 2, 3, 2, 3, 2, 3, 2]]  # xyxy gain
 
             # Match targets to anchors
             t = targets * gain
